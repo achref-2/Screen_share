@@ -1,0 +1,74 @@
+/* Reset default padding and margin */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* Ensure padding and borders are included in element's total width and height */
+    font-family: 'Arial', sans-serif; /* Use a clean, modern font */
+}
+
+/* General body styling */
+body {
+    background-color: #f0f2f5; /* Light gray background */
+    color: #333; /* Dark text color for readability */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Full viewport height */
+    font-size: 16px; /* Base font size */
+}
+
+/* Header styling */
+.header {
+    width: 100%;
+    max-width: 600px; /* Limit the width for better readability */
+    text-align: center;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    background: #4148ae;
+    font-size: 24px;
+    border-radius: 8px; /* Rounded corners for a modern look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin-bottom: 16px; /* Spacing below the header */
+}
+
+/* Code display styling */
+.code {
+    padding: 8px;
+    text-align: center;
+    font-size: 18px;
+    color: #555; /* Slightly lighter color for the code text */
+    margin-bottom: 16px; /* Spacing below the code display */
+}
+
+/* Container for buttons, centering and spacing */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px; /* Space between buttons */
+}
+
+/* Button styling */
+.btn {
+    border: none;
+    background: #1ae004;
+    color: white;
+    padding: 12px 24px;
+    font-size: 18px;
+    border-radius: 8px; /* Rounded corners for buttons */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background 0.3s ease; /* Smooth transition for hover effect */
+    width: 200px; /* Fixed width for consistency */
+}
+
+/* Button hover effect */
+.btn:hover {
+    background: #17a300; /* Slightly darker green on hover */
+}
+
+/* Hide stop button initially */
+#stop {
+    display: none;
+}
